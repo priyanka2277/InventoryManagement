@@ -128,6 +128,53 @@ Method:POST
        URL:/orders/{id}
        Method:DELETE
        Description:Deletes an order by its ID.
+
+       UserServiceImpl:
+         It is a service implementation for managing users in the application.It performs the Following tasks:
+         User registration with encrypted passwords.
+         Role assignment based on provided roles.
+         User update and deletion with role-based authorization.
+         Data transfer between DTO and Entity using ModelMapper
+
+         CategoryService
+         CategoryService provides a set of operations for managing categories in the application,including:
+         .Creation of new categories
+         .Retrieval of categories by ID or listing all categories.
+         Updating category details.
+         Deleting categories.
+
+
+         ProductService
+
+         All endpoints for ProductService assume the base URL:
+         Create a product
+          EndPoint:POST/api/products
+          Description:Creates a new product and saves it to the database.
+
+          Get Product by ID
+          Endpoint:GET/api/products/{id}
+          Description:Retrives the details of a specific product using its ID.
+
+          Get All Products
+          Endpoints:GET/api/products
+          Description:Retrieves a list of all products in the database
+
+          Update a Product
+          Endpoint:PUT/api/products/{id}
+          Description:Updates an existing product by its ID.
+
+          Delete a Product
+          Endpoint:DELETE/api/products/{id}
+          Description:Deletes a product by its ID.
+          
+
+          
+
+          
+          
+
+
+       
        
 
        
